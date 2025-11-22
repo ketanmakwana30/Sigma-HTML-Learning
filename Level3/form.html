@@ -6,24 +6,49 @@
         <title>HTML Form</title>
     </head>
     <body>
-        <form action="/action">
-            Username    
-            <input type="text"> <br>
-            password
-            <input type="password"><br>
-            Number
-            <input type="number"><br>
-            Time
-            <input type="time"><br>
-            Date
-            <input type="date"><br>
-            month
-            <input type="month"><br>
-            color
-            <input type="color"><br>
-            chackbox
-            <input type="checkbox">
+        <form action="/server">
+            <div>
+                <label>
+                    Username:    
+                    <input type="text" placeholder="Enter Username" name="user"> 
+                </label>
+            </div>
+            <div>
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" placeholder="Enter password" name="pass">
+            </div>
+            <div>
+                <label for="phone">Enter Phone No:</label>
+                <input type="number"id="phone" placeholder="Enter phone" name="phone">
+            </div>
+            <div>
+                <label for="age">Enter Your Age:</label>
+                <input type="number"id="age" placeholder="Enter Age" name="age">
+            </div>
+            <!-- <div>
+                <label for="click-me"></label>
+                <input type="button"id="click-me" value="click me">
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input type="submit"id="submit">
+            </div> -->
+            <button type="submit">Submit</button><br>
+            <button type="button">Simpal </button><br>
+            <button type="reset">Reset </button><br>
         </form>
+        <hr>
 
+        <!-- Practice Question set 8 -->
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search on Google" name="q">
+            <button>search</button>
+        </form>
+        <hr>
+
+        <form action="/action">
+            <input type="checkbox" id="Age" name="age" checked>
+            <label for="Age">I am 18+</label>
+        </form>
     </body>
 </html>
