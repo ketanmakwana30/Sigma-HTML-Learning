@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <form action="/server">
+            <div>
+                <label>
+                    Username:    
+                    <input type="text" placeholder="Enter Username" name="user"> 
+                </label>
+            </div>
+            <div>
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" placeholder="Enter password" name="pass">
+            </div>
+            <div>
+                <label for="phone">Enter Phone No:</label>
+                <input type="number"id="phone" placeholder="Enter phone" name="phone">
+            </div>
+            <div>
+                <label for="age">Enter Your Age:</label>
+                <input type="number"id="age" placeholder="Enter Age" name="age">
+            </div>
+            <!-- <div>
+                <label for="click-me"></label>
+                <input type="button"id="click-me" value="click me">
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input type="submit"id="submit">
+            </div> -->
+            <button type="submit">Submit</button><br>
+            <button type="button">Simpal </button><br>
+            <button type="reset">Reset </button><br>
+        </form>
+        <hr>
+        <br>
+
+        <!-- Practice Question set 8 -->
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search on Google" name="q">
+            <button>search</button>
+        </form>
+        <br>
+        <hr>
+
+        <form action="/action">
+            <div>
+                <p>choose your subject:</p>
+                <input type="checkbox" id="math" name="subject" value="math">
+                <label for="math">math</label>
+                <input type="checkbox" id="cpp" name="subject" value="cpp">
+                <label for="cpp">cpp</label>
+                <input type="checkbox" id="stat" name="subject" value="stat">
+                <label for="stat">stat</label>
+                <input type="checkbox" id="cs" name="subject" value="cs">
+                <label for="cs">cs</label>
+            </div>
+            <br>
+            <div>
+                <p>choose fruit:</p>
+                <input type="radio" id="apple" name="fruit" value="apple">
+                <label for="apple">apple</label>
+                <input type="radio" id="mango" name="fruit" value="mango">
+                <label for="mango">mango</label>
+                <input type="radio" id="banana" name="fruit" value="banana">
+                <label for="banana">banana</label>
+                <input type="radio" id="orenge" name="fruit" value="orenge">
+                <label for="orenge">orenge</label>
+                <input type="radio" id="dragon" name="fruit" value="dragon">
+                <label for="dragon">dragon</label>
+            </div>
+            <br>
+            <hr>
+            <div>
+                choose your profession
+                <select name="profession" id="profession">
+                    <option>Select Your Option</option>
+                    <option value="student">student</option>
+                    <option value="dev">Developer</option>
+                </select>
+            </div>
+            <br>
+            <label for="volume">Select your volume level :</label>
+            <input type="range" min="0" max="100" name="vol" step="5" value="65">
+            <br>
+            <label for="feedback">Pease provide your valueable feedback</label>
+            <textarea name="feed" id="feedback" placeholder="Give your feedback ~"></textarea>
+            <br>
+            <br>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
